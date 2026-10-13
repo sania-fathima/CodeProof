@@ -1,0 +1,3 @@
+# Runtime: stdlib only (no third-party dependencies required).
+# Dev/test:
+pytest==8.3.4

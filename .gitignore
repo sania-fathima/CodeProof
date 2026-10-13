@@ -1,0 +1,28 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Node.js
+node_modules/
+
+# Build outputs
+dist/
+coverage/
+artifacts/
+cache/
+typechain-types/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
