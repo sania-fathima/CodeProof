@@ -1,4 +1,6 @@
-﻿fastapi
+fastapi
 uvicorn
 httpx
 pytest
+sqlalchemy
+psycopg[binary]
