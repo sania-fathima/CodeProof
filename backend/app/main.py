@@ -1,4 +1,4 @@
-﻿"""CodeProof API: FastAPI wrapper for the Phase 1 AI detector."""
+"""CodeProof API: FastAPI wrapper for the Phase 1 AI detector."""
 
 import sys
 from pathlib import Path
@@ -55,3 +55,6 @@ def analyze(request: AnalyzeRequest) -> dict[str, Any]:
         )
     except (DetectorValidationError, ValueError) as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+from app.auth import router as auth_router
+app.include_router(auth_router)
